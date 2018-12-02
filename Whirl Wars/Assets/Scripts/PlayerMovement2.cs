@@ -2,9 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerMovement1 : MonoBehaviour {
+public class PlayerMovement2 : MonoBehaviour
+{
 
-	public PlayerMovement1 Player1;
+	public PlayerMovement2 Player2;
 
 	public KeyCode left;
 	public KeyCode right;
@@ -24,8 +25,8 @@ public class PlayerMovement1 : MonoBehaviour {
 
 
 
-	//Player 1 Code with up, down, left, right keys
-	void Player1Movement()
+	//Player 2 Code with aswd keys
+	void Player2Movement()
 	{
 		if (Input.GetKey(left))
 		{
@@ -56,8 +57,8 @@ public class PlayerMovement1 : MonoBehaviour {
 	//	if (other.gameObject.CompareTag("PickUp"))
 	//	{
 	//		other.gameObject.SetActive(false);
-	
-	
+
+
 	//	}
 
 	//}
@@ -80,7 +81,7 @@ public class PlayerMovement1 : MonoBehaviour {
 		}
 
 
-		Player1Movement();
+		Player2Movement();
 
 	}
 }
