@@ -23,7 +23,7 @@ GameObject:
   - component: {fileID: 23882494681096122}
   - component: {fileID: 64297633380885566}
   m_Layer: 0
-  m_Name: Body1
+  m_Name: Basin
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
