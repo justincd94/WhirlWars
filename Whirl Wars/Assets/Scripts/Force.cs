@@ -15,8 +15,8 @@ public class Force : MonoBehaviour {
 
 		if (col.gameObject.CompareTag("Sphere"))
 		{
-			col.gameObject.GetComponent<Rigidbody>().AddForce(forceApplied * 50);
-			col.gameObject.GetComponent<Rigidbody>().AddForce(forceApplied * -50);
+			//col.gameObject.GetComponent<Rigidbody>().AddForce(forceApplied * 50);
+			col.gameObject.GetComponent<Rigidbody>().AddForce(forceApplied * -20);
 		}
 	}
 }
