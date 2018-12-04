@@ -19,11 +19,13 @@ public class DeathScript : MonoBehaviour {
         if (col.gameObject.tag == "Player")
         {
             Destroy(col.gameObject);
+            Destroy(GameObject.FindGameObjectWithTag("Player2"));
         }
 
         if (col.gameObject.tag == "Player2")
         {
             Destroy(col.gameObject);
+            Destroy(GameObject.FindGameObjectWithTag("Player"));
         }
     }
 }

@@ -28,16 +28,18 @@ public class WhirlWars : MonoBehaviour {
     {
         if (GameObject.FindWithTag("Player") == null)
         {
-            RespawnP1();
+            //RespawnP1();
+            Respawn();
         }
 
         if (GameObject.FindWithTag("Player2") == null)
         {
-            RespawnP2();
+            //RespawnP2();
+            Respawn();
         }
     }
 
-    void RespawnP1 ()
+    /*void RespawnP1 ()
     {
         GameObject player1 = Instantiate<GameObject>(p1);
         p1.transform.position = new Vector3 (4, 2, 0);
@@ -47,5 +49,15 @@ public class WhirlWars : MonoBehaviour {
     {
         GameObject player2 = Instantiate<GameObject>(p2);
         p2.transform.position = new Vector3(-4, 2, 0);
+    }*/
+
+    void Respawn()
+    {
+        GameObject player1 = Instantiate<GameObject>(p1);
+        p1.transform.position = new Vector3(4, 2, 0);
+
+        GameObject player2 = Instantiate<GameObject>(p2);
+        p2.transform.position = new Vector3(-4, 2, 0);
+
     }
 }
