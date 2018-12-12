@@ -4,15 +4,7 @@ using UnityEngine;
 
 public class DeathScript : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+	public Scoreboard scoreboard;
 
     private void OnCollisionEnter(Collision col)
     {
@@ -20,12 +12,17 @@ public class DeathScript : MonoBehaviour {
         {
             Destroy(col.gameObject);
             Destroy(GameObject.FindGameObjectWithTag("Player2"));
+			scoreboard.AddScoreP1();
+            // give a point to p2
         }
 
         if (col.gameObject.tag == "Player2")
         {
             Destroy(col.gameObject);
             Destroy(GameObject.FindGameObjectWithTag("Player"));
+			scoreboard.AddScoreP2();
+            // give a point to p1
         }
     }
+
 }

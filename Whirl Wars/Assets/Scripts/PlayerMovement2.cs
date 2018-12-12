@@ -11,6 +11,7 @@ public class PlayerMovement2 : MonoBehaviour
 	public KeyCode right;
 	public KeyCode up;
 	public KeyCode down;
+	public KeyCode space;
 
 
 	private void Start()
