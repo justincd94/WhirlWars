@@ -20,12 +20,14 @@ public class WhirlWars : MonoBehaviour {
         //SetP2(p2);
 
         p1 = CharacterPicker.player1;
+        p1.transform.position = new Vector3(-4, 2, 0);
         GameObject player1 = Instantiate<GameObject>(p1);
-        p1.transform.position = new Vector3(4, 2, 0);
+        
 
         p2 = PlayerTwoSelector.player2;
+        p2.transform.position = new Vector3(4, 2, 0);
         GameObject player2 = Instantiate<GameObject>(p2);
-        p2.transform.position = new Vector3(-4, 2, 0);
+        
 
         Invoke("CheckIfExists", 1.5f);
     }
@@ -71,10 +73,10 @@ public class WhirlWars : MonoBehaviour {
     void Respawn()
     {
         GameObject player1 = Instantiate<GameObject>(p1);
-        p1.transform.position = new Vector3(4, 2, 0);
+        p1.transform.position = new Vector3(-4, 2, 0);
 
         GameObject player2 = Instantiate<GameObject>(p2);
-        p2.transform.position = new Vector3(-4, 2, 0);
+        p2.transform.position = new Vector3(4, 2, 0);
 
     }
 
