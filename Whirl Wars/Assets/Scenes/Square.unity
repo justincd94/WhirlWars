@@ -828,6 +828,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   p1: {fileID: 1854102613310736, guid: 940d3660c39134942b6538edde0e6d7b, type: 2}
   p2: {fileID: 1177989110010884, guid: fd959fc81c2cf0643b36c915212dd82d, type: 2}
+  b1: {fileID: 0}
+  b2: {fileID: 0}
+  b3: {fileID: 0}
+  b4: {fileID: 0}
 --- !u!45 &534669907
 Skybox:
   m_ObjectHideFlags: 0
@@ -1458,7 +1462,7 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 3
+          m_IntArgument: 4
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
