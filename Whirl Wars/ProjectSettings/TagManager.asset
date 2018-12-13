@@ -7,6 +7,7 @@ TagManager:
   - Undefined
   - Player2
   - Music
+  - ClickHandler
   layers:
   - Default
   - TransparentFX
