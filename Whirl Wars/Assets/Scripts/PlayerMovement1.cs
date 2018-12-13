@@ -128,7 +128,7 @@ public class PlayerMovement1 : MonoBehaviour
 
     public float boostCooldown = 4f;
 
-    private bool hasCooldown;
+    public static bool hasCooldown;
 
 
 
