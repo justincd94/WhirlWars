@@ -826,8 +826,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0b6fd8d0e2aa2d34491544087680130f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  p1: {fileID: 1854102613310736, guid: 940d3660c39134942b6538edde0e6d7b, type: 2}
-  p2: {fileID: 1177989110010884, guid: fd959fc81c2cf0643b36c915212dd82d, type: 2}
+  p1: {fileID: 0}
+  p2: {fileID: 0}
   b1: {fileID: 0}
   b2: {fileID: 0}
   b3: {fileID: 0}

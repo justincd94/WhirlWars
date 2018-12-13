@@ -292,7 +292,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Copper
+  m_Text: Purple
 --- !u!222 &552241411
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -924,7 +924,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Stone
+  m_Text: Pearl
 --- !u!222 &870060155
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1426,7 +1426,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Granite
+  m_Text: Red
 --- !u!222 &1511874464
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1629,7 +1629,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Tin
+  m_Text: Sky Blue
 --- !u!222 &2011610962
 CanvasRenderer:
   m_ObjectHideFlags: 0

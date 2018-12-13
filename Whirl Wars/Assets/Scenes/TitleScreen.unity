@@ -921,7 +921,9 @@ MonoBehaviour:
     Player Two: WASD + Space Bar (Boost)
 
 
-    Knock the other player out of the arena!'
+    Knock the other player out of the arena!
+
+    First to 10 points wins!'
 --- !u!222 &1300848085
 CanvasRenderer:
   m_ObjectHideFlags: 0
