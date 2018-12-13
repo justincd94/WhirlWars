@@ -12,7 +12,7 @@ public class DeathScript : MonoBehaviour {
         {
             Destroy(col.gameObject);
             Destroy(GameObject.FindGameObjectWithTag("Player2"));
-			scoreboard.AddScoreP1();
+			scoreboard.AddScoreP2();
             // give a point to p2
         }
 
@@ -20,7 +20,7 @@ public class DeathScript : MonoBehaviour {
         {
             Destroy(col.gameObject);
             Destroy(GameObject.FindGameObjectWithTag("Player"));
-			scoreboard.AddScoreP2();
+			scoreboard.AddScoreP1();
             // give a point to p1
         }
     }

@@ -907,7 +907,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: Player One Wins!!!
+  m_Text: Player Two Wins!!!
 --- !u!222 &624049482
 CanvasRenderer:
   m_ObjectHideFlags: 0

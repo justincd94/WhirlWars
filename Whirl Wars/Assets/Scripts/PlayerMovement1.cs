@@ -66,7 +66,7 @@ public class PlayerMovement1 : MonoBehaviour {
 	void Update()
 	{
 
-		if (Input.GetKeyDown("space") && GetComponent<Rigidbody>().transform.position.y <= 0.5f)
+		/*if (Input.GetKeyDown("space") && GetComponent<Rigidbody>().transform.position.y <= 0.5f)
 		{
 			Vector3 jump = new Vector3(0.0f, 275f, 0.0f);
 			GetComponent<Rigidbody>().AddForce(jump);
@@ -77,7 +77,7 @@ public class PlayerMovement1 : MonoBehaviour {
 		{
 			Vector3 jump = new Vector3(0.0f, 275f, 0.0f);
 			GetComponent<Rigidbody>().AddForce(jump);
-		}
+		}*/
 
 
 		Player1Movement();

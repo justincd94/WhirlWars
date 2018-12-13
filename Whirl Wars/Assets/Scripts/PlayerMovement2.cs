@@ -253,7 +253,7 @@ public class PlayerMovement2 : MonoBehaviour
 
 
 
-        if (Input.GetKeyDown("space") && GetComponent<Rigidbody>().transform.position.y <= 0.5f)
+        /*if (Input.GetKeyDown("space") && GetComponent<Rigidbody>().transform.position.y <= 0.5f)
 
         {
 
@@ -275,7 +275,7 @@ public class PlayerMovement2 : MonoBehaviour
 
             GetComponent<Rigidbody>().AddForce(jump);
 
-        }
+        }*/
 
 
 
