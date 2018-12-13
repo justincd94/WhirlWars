@@ -21,7 +21,7 @@ public class ContinuousMusic : MonoBehaviour {
     {
         Scene scene = SceneManager.GetActiveScene();
 
-        if (scene.buildIndex == 4 || scene.buildIndex == 5)
+        if (scene.buildIndex == 4 || scene.buildIndex == 5 || scene.buildIndex == 6)
         {
             Destroy(this.gameObject);
         }
