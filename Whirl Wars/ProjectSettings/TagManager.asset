@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Undefined
   - Player2
+  - Music
   layers:
   - Default
   - TransparentFX
