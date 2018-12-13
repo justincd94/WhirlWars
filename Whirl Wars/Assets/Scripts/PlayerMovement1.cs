@@ -130,6 +130,8 @@ public class PlayerMovement1 : MonoBehaviour
 
     public static bool hasCooldown;
 
+    //public AudioSource clashSound;
+
 
 
     private ParticleSystem[] particles = new ParticleSystem[4];
@@ -141,6 +143,8 @@ public class PlayerMovement1 : MonoBehaviour
     {
 
         rb = GetComponent<Rigidbody>();
+
+        //clashSound = GetComponent<AudioSource>();
 
         //var em = ps.emission;
 

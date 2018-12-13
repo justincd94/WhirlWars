@@ -236,9 +236,9 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 9371a16c3bd9b9f408d3039b64d625d9, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.25
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -354,6 +354,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 0}
+  clashes:
+  - {fileID: 8300000, guid: e84d3c34078532a45a6c1cc33a9d7ed6, type: 3}
+  - {fileID: 8300000, guid: 36f8dc368018bd6479ad4d79929fd3b2, type: 3}
+  - {fileID: 8300000, guid: 9371a16c3bd9b9f408d3039b64d625d9, type: 3}
 --- !u!135 &135259258071961092
 SphereCollider:
   m_ObjectHideFlags: 1
