@@ -26,7 +26,7 @@ public class ForceP1 : MonoBehaviour {
             clashClip = clashes[index];
             clashSound.clip = clashClip;
             clashSound.Play();
-			//col.gameObject.GetComponent<Rigidbody>().AddForce(forceApplied * 50);
+			col.gameObject.GetComponent<Rigidbody>().AddForce(forceApplied * 50);
 			col.gameObject.GetComponent<Rigidbody>().AddForce(forceApplied * (rb.velocity.magnitude*3.5f + rb.angularVelocity.magnitude));
 			col.gameObject.GetComponent<Rigidbody>().AddForce(-forceApplied* (rb.velocity.magnitude * .1f), ForceMode.Impulse);
 		}

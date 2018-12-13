@@ -94,6 +94,7 @@ GameObject:
   - component: {fileID: 114032854208488304}
   - component: {fileID: 114791961743523988}
   - component: {fileID: 82870864387863392}
+  - component: {fileID: 114586256074406430}
   m_Layer: 0
   m_Name: Player2
   m_TagString: Player
@@ -328,12 +329,32 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1854102613310736}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: acc11d47cf3f6da47a993d1bf33939d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Player1: {fileID: 0}
+  left: 276
+  right: 275
+  up: 273
+  down: 274
+  burst: 305
+  speed: 25
+  rb: {fileID: 0}
+  boostCooldown: 4
+--- !u!114 &114586256074406430
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1854102613310736}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8cd5544be2a14bb45ae3cd85a49c0e37, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Player2: {fileID: 0}
   left: 276
   right: 275
   up: 273

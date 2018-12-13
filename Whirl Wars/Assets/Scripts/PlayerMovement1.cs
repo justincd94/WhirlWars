@@ -295,12 +295,12 @@ public class PlayerMovement1 : MonoBehaviour
             rb.AddForce(rb.velocity.normalized * 1000);
 
 
-			StopParticles();
+			
 			StartCoroutine(ActivateCooldown());
+			StopParticles();
 
-            
 
-        }
+		}
 
 
 
@@ -322,14 +322,14 @@ public class PlayerMovement1 : MonoBehaviour
 
         yield return new WaitForSeconds(boostCooldown);
 
-		StartParticles();
+		
 		//IMPORTANT THAT HASCOOLDOWN IS BEFORE PARTICLE THING RIGHT HERE, THIS WORKS (MINUS THE PARTICLES THAT SHIT IS WEIRD)
 		hasCooldown = false;
-        
+		StartParticles();
 
 
 
-    }
+	}
 
 
 

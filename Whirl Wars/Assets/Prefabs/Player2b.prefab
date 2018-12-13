@@ -94,6 +94,7 @@ GameObject:
   - component: {fileID: 114159256135899142}
   - component: {fileID: 114394961039000000}
   - component: {fileID: 82788105679171902}
+  - component: {fileID: 114024766764264290}
   m_Layer: 0
   m_Name: Player2b
   m_TagString: Player
@@ -322,6 +323,26 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &114024766764264290
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1854102613310736}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8cd5544be2a14bb45ae3cd85a49c0e37, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Player2: {fileID: 0}
+  left: 276
+  right: 275
+  up: 273
+  down: 274
+  burst: 305
+  speed: 25
+  rb: {fileID: 0}
+  boostCooldown: 4
 --- !u!114 &114159256135899142
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -344,7 +365,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1854102613310736}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: acc11d47cf3f6da47a993d1bf33939d7, type: 3}
   m_Name: 
