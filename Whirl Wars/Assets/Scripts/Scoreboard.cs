@@ -10,6 +10,10 @@ public class Scoreboard : MonoBehaviour {
 
 	public Text scoreText1;
 	public Text scoreText2;
+    public GameObject p1WinText;
+    public GameObject p2WinText;
+    public GameObject rematchButton;
+    public GameObject startMenuButton;
 
 	// Use this for initialization
 	void Start () {
@@ -17,16 +21,33 @@ public class Scoreboard : MonoBehaviour {
 		p2Score = 0;
 	}
 
-	public void AddScoreP1()
+    private void Update()
+    {
+        if (p1Score >= 10)
+        {
+            P1Win();
+        }
+
+        if (p2Score >= 10)
+        {
+            P2Win();
+        }
+    }
+
+    public void AddScoreP1()
 	{
-		p1Score += 1;
+        
+        p1Score += 1;
 		UpdateScoreP1();
+        
 	}
 
 	public void AddScoreP2()
 	{
-		p2Score += 1;
+        
+        p2Score += 1;
 		UpdateScoreP2();
+        
 	}
 
 	void UpdateScoreP1()
@@ -38,5 +59,21 @@ public class Scoreboard : MonoBehaviour {
 	{
 		scoreText2.text = "Player Two: " + p2Score;
 	}
+
+    void P1Win()
+    {
+        p1WinText.SetActive(true);
+        //have rematch and character select or stage select buttons appear
+        rematchButton.SetActive(true);
+        startMenuButton.SetActive(true);
+    }
+
+    void P2Win()
+    {
+        p2WinText.SetActive(true);
+        //have rematch and character select or stage select buttons appear
+        rematchButton.SetActive(true);
+        startMenuButton.SetActive(true);
+    }
 
 }

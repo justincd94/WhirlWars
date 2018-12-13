@@ -6,6 +6,8 @@ public class WhirlWars : MonoBehaviour {
 
     public GameObject p1;
     public GameObject p2;
+    //public GameObject p1winText;
+    //public GameObject p2winText;
 
 	// Use this for initialization
 	void Start () {
@@ -22,6 +24,7 @@ public class WhirlWars : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
         CheckIfExists(.1f);
+
 	}
 
     void CheckIfExists (float delay)
@@ -60,4 +63,16 @@ public class WhirlWars : MonoBehaviour {
         p2.transform.position = new Vector3(-4, 2, 0);
 
     }
+
+    /*public void P1Win()
+    {
+        p1winText.SetActive(true);
+        //have rematch and character select or stage select buttons appear
+    }
+
+    public void P2Win()
+    {
+        p2winText.SetActive(true);
+        //have rematch and character select or stage select buttons appear
+    }*/
 }
