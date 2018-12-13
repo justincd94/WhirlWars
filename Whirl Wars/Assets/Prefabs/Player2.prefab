@@ -23,11 +23,11 @@ GameObject:
   - component: {fileID: 23565935116303482}
   - component: {fileID: 135444237558416156}
   - component: {fileID: 54036518795550056}
-  - component: {fileID: 114108810545510104}
-  - component: {fileID: 114442836972827474}
+  - component: {fileID: 114032854208488304}
+  - component: {fileID: 114791961743523988}
   m_Layer: 0
   m_Name: Player2
-  m_TagString: Player2
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -102,7 +102,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &114108810545510104
+--- !u!114 &114032854208488304
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -110,18 +110,17 @@ MonoBehaviour:
   m_GameObject: {fileID: 1854102613310736}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8cd5544be2a14bb45ae3cd85a49c0e37, type: 3}
+  m_Script: {fileID: 11500000, guid: acc11d47cf3f6da47a993d1bf33939d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Player2: {fileID: 0}
-  left: 97
-  right: 100
-  up: 119
-  down: 115
-  space: 0
+  Player1: {fileID: 0}
+  left: 276
+  right: 275
+  up: 273
+  down: 274
   speed: 25
   rb: {fileID: 0}
---- !u!114 &114442836972827474
+--- !u!114 &114791961743523988
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -129,7 +128,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1854102613310736}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5fe40a77587eccd4ca25adc88abfa658, type: 3}
+  m_Script: {fileID: 11500000, guid: 2c21e29a678b792498623d8493c3fd92, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 0}
