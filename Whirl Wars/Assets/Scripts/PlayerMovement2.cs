@@ -103,7 +103,7 @@ public class PlayerMovement2 : MonoBehaviour
 
     public PlayerMovement2 Player2;
 
-    public GameObject particle;
+    //public GameObject particle;
 
 
 
@@ -123,7 +123,7 @@ public class PlayerMovement2 : MonoBehaviour
 
     public Rigidbody rb;
 
-    public ParticleSystem ps;
+    //public ParticleSystem ps;
 
 
 
@@ -143,9 +143,9 @@ public class PlayerMovement2 : MonoBehaviour
 
         rb = GetComponent<Rigidbody>();
 
-        var em = ps.emission;
+        //var em = ps.emission;
 
-        em.enabled = false;
+        //em.enabled = false;
 
 
 
@@ -292,12 +292,12 @@ public class PlayerMovement2 : MonoBehaviour
             rb.AddForce(rb.velocity.normalized * 1000);
 
 
+			StopParticles();
+			StartCoroutine(ActivateCooldown());
+			
 
-            StartCoroutine(ActivateCooldown());
 
-            StopParticles();
-
-        }
+		}
 
 
 
@@ -319,10 +319,10 @@ public class PlayerMovement2 : MonoBehaviour
 
         yield return new WaitForSeconds(boostCooldown);
 
-
-        //IMPORTANT THAT HASCOOLDOWN IS BEFORE PARTICLE THING RIGHT HERE, THIS WORKS (MINUS THE PARTICLES THAT SHIT IS WEIRD)
-        hasCooldown = false;
-        StartParticles();
+		StartParticles();
+		//IMPORTANT THAT HASCOOLDOWN IS BEFORE PARTICLE THING RIGHT HERE, THIS WORKS (MINUS THE PARTICLES THAT SHIT IS WEIRD)
+		hasCooldown = false;
+        
 
         
 

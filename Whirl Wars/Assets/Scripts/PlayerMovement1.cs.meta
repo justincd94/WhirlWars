@@ -3,7 +3,11 @@ guid: acc11d47cf3f6da47a993d1bf33939d7
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - Player1: {instanceID: 0}
+  - particle: {instanceID: 0}
+  - rb: {instanceID: 0}
+  - ps: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
