@@ -284,7 +284,7 @@ public class PlayerMovement2 : MonoBehaviour
         Player2Movement();
 
 
-
+        
         if (Input.GetKeyDown(burst) && !hasCooldown)
 
         {
@@ -320,10 +320,11 @@ public class PlayerMovement2 : MonoBehaviour
         yield return new WaitForSeconds(boostCooldown);
 
 
-
+        //IMPORTANT THAT HASCOOLDOWN IS BEFORE PARTICLE THING RIGHT HERE, THIS WORKS (MINUS THE PARTICLES THAT SHIT IS WEIRD)
+        hasCooldown = false;
         StartParticles();
 
-        hasCooldown = false;
+        
 
     }
 
