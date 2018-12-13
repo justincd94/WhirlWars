@@ -126,12 +126,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player1: {fileID: 0}
+  particle: {fileID: 0}
   left: 276
   right: 275
   up: 273
   down: 274
+  burst: 305
   speed: 25
   rb: {fileID: 0}
+  ps: {fileID: 0}
+  boostCooldown: 4
 --- !u!135 &135444237558416156
 SphereCollider:
   m_ObjectHideFlags: 1
