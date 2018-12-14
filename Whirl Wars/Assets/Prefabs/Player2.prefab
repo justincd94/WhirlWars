@@ -359,7 +359,7 @@ MonoBehaviour:
   right: 275
   up: 273
   down: 274
-  burst: 305
+  burst: 303
   speed: 25
   rb: {fileID: 0}
   boostCooldown: 4

@@ -122,19 +122,19 @@ public class PlayerMovement1 : MonoBehaviour
 
     public Rigidbody rb;
 
-    //public ParticleSystem ps;
+	//public ParticleSystem ps;
 
+	private Vector3 movementVector;
 
-
-    public float boostCooldown = 4f;
+	public float boostCooldown = 4f;
 
     public static bool hasCooldown;
 
-    //public AudioSource clashSound;
+	//public AudioSource clashSound;
 
+	private CharacterController characterController;
 
-
-    private ParticleSystem[] particles = new ParticleSystem[4];
+	private ParticleSystem[] particles = new ParticleSystem[4];
 
 
 
@@ -144,15 +144,15 @@ public class PlayerMovement1 : MonoBehaviour
 
         rb = GetComponent<Rigidbody>();
 
-        //clashSound = GetComponent<AudioSource>();
+		//clashSound = GetComponent<AudioSource>();
 
-        //var em = ps.emission;
+		//var em = ps.emission;
 
-        //em.enabled = false;
+		//em.enabled = false;
 
+		characterController = GetComponent<CharacterController>();
 
-
-        int i = 0;
+		int i = 0;
 
         foreach (Transform child in transform)
 
@@ -256,7 +256,7 @@ public class PlayerMovement1 : MonoBehaviour
 
 
 
-        /*if (Input.GetKeyDown("space") && GetComponent<Rigidbody>().transform.position.y <= 0.5f)
+		/*if (Input.GetKeyDown("space") && GetComponent<Rigidbody>().transform.position.y <= 0.5f)
 
         {
 
@@ -280,11 +280,13 @@ public class PlayerMovement1 : MonoBehaviour
 
         }*/
 
+		movementVector.x = Input.GetAxis("LeftJoystickX") * speed;
 
+		movementVector.z = Input.GetAxis("LeftJoystickY") * speed;
 
+		characterController.Move(movementVector * Time.deltaTime);
 
-
-        Player1Movement();
+		Player1Movement();
 
 
 
